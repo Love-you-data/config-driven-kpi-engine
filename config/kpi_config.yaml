@@ -1,0 +1,14 @@
+group_by: region
+
+kpis:
+  revenue_variance_pct:
+    formula: "(actual - planned) / planned * 100"
+
+  success_rate_pct:
+    formula: "(volume - failed) / volume * 100"
+
+  failure_rate_pct:
+    formula: "failed / volume * 100"
+
+  avg_revenue_per_txn:
+    formula: "actual / volume"
